@@ -1,4 +1,5 @@
 import numpy as np
+from scipy.optimize import minimize_scalar
 
 def admm_energy_system(cost_functions, demand, rho=1.0, max_iters=50, tol=1e-4):
     """
